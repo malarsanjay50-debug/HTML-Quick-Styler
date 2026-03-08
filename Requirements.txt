@@ -1,0 +1,38 @@
+For the HTML Quick-Styler project in Google Colab, the requirements.txt file should include the libraries used in your code such as Gradio, Transformers, Torch, and Accelerate. These are required to load the IBM Granite model and run the web interface described in your project document. 
+
+
+Create a file named requirements.txt and add this:
+gradio>=4.0.0
+transformers>=4.40.0
+torch>=2.0.0
+accelerate>=0.27.0
+sentencepiece
+huggingface_hub
+
+Step 1 — Create the file
+
+How to Use in Google Colab
+%%writefile requirements.txt
+gradio>=4.0.0
+transformers>=4.40.0
+torch>=2.0.0
+accelerate>=0.27.0
+sentencepiece
+huggingface_hub
+
+Step 2 — Install the requirements
+
+Run:
+!pip install -r requirements.txt
+
+Why These Libraries Are Needed
+
+
+| Library             | Purpose                                   |
+| ------------------- | ----------------------------------------- |
+| **gradio**          | Build the web interface for the project   |
+| **transformers**    | Load the IBM Granite AI model             |
+| **torch**           | Deep learning framework used by the model |
+| **accelerate**      | Helps run large models efficiently        |
+| **sentencepiece**   | Tokenizer dependency for many models      |
+| **huggingface_hub** | Download models from Hugging Face         |
